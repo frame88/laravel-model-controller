@@ -26,4 +26,13 @@ Stilare il layout nei dettagli con Sass --}}
 @extends ('layouts.base')
 
 @section('content')
+    @foreach ($movies as $movie)
+       <div class="card">
+           <h2>{{ $movie->title }}</h2>
+           <h3>{{ $movie->original_title }}</h3>
+           <span>{{ $movie->date }}</span>
+           <span>{{ $movie->vote }}</span>
+           <span>{{ $movie->nationality }}</span>
+       </div>
+    @endforeach
 @endsection
