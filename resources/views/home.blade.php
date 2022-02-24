@@ -1,13 +1,5 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-    </head>
-    <body>
-        {{-- Esercizio di oggi:
+
+{{-- Esercizio di oggi:
 nome repo: laravel-model-controller
 
 Oggi facciamo la nostra prima vera interazione con il database utilizzando l'ORM di Laravel.
@@ -30,5 +22,8 @@ php artisan make:controller PageController
 
 BONUS:
 Stilare il layout nei dettagli con Sass --}}
-    </body>
-    </html>
+
+@extends ('layouts.base')
+
+@section('content')
+@endsection
